@@ -2,8 +2,12 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
-public class Employer {
+public class Employer extends JobField {
+    public Employer(String value) {
+        super(value);
+    }
 
+/* inheritance results in this data not being needed
     private int id;
     private static int nextId = 1;
     private String value;
@@ -51,5 +55,5 @@ public class Employer {
     public void setValue(String value) {
         this.value = value;
     }
-
+*/
 }
